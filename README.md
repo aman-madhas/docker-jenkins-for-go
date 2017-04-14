@@ -32,4 +32,4 @@ Enter your repo details
 Build will be triggered by commits on a branch assuming you have committed a valid Jenkinsfile in the project root directory.
 
 # To inspect your container
-docker exec -i -t jenkinsgo /bin/bash
+docker exec -i -t jenkinsgo /bin/sh
