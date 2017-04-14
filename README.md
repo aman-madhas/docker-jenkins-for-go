@@ -11,9 +11,9 @@ Jenkins plugins installed are:
 -workflow-aggregator
 -junit
 
-go1.8.1 for linux-amd64 is installed via apt-get
+go1.8.1 source is downloaded and compiled for linux-amd64 alpine, see https://hub.docker.com/_/golang/ 
 
-Uses go2xunit to convert go test results into Jenkins-viewable junit results
+Uses go2xunit (https://github.com/tebeka/go2xunit) to convert go test results into Jenkins-viewable junit results
 
 # To build the docker image:
 docker build -t aman/jenkinsgo .
