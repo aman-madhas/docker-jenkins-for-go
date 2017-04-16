@@ -1,7 +1,7 @@
 FROM jenkins:alpine
 
 # install plugins
-RUN /usr/local/bin/install-plugins.sh workflow-multibranch git workflow-aggregator junit
+RUN /usr/local/bin/install-plugins.sh workflow-multibranch git workflow-aggregator junit htmlpublisher
 
 USER root
 
@@ -40,3 +40,5 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
 
 RUN go get github.com/tebeka/go2xunit
+
+RUN go get bitbucket.org/a_madhas/coverprofile-export
