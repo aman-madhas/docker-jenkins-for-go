@@ -19,7 +19,7 @@ Uses go2xunit (https://github.com/tebeka/go2xunit) to convert go test results in
 docker build -t aman/jenkinsgo .
 
 # To run docker container (volume specified for windows):
-docker run --name jenkinsgo -p 8080:8080 -p 50000:50000 -v //c/Users/IBM_ADMIN/sandbox/docker-volumes/jenkinsgo:/var/jenkins_home aman/jenkinsgo
+docker run --name jenkinsgo -p 8080:8080 -p 50000:50000 -v //c/Users/<USERNAME>/sandbox/docker-volumes/jenkinsgo:/var/jenkins_home aman/jenkinsgo
 
 You'll see the initial admin password in the logs, copy it.
 Log into Jenkins in browser:
