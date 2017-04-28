@@ -15,6 +15,8 @@ go1.8.1 source is downloaded and compiled for linux-amd64 alpine, see https://hu
 
 Uses go2xunit (https://github.com/tebeka/go2xunit) to convert go test results into Jenkins-viewable junit results
 
+Uses my handy tool coverprofile-export (https://bitbucket.org/a_madhas/coverprofile-export) to convert go test coverage output to html so it can be published to junit results
+
 # To build the docker image:
 docker build -t aman/jenkinsgo .
 
